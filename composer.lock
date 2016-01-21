@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "eeb1a59d1d434ca26bd5feb437af1db9",
-    "content-hash": "4a3dbccd2c6ff870290ceba21925f185",
+    "hash": "c74c125825b312fbef3b29e4a8749075",
+    "content-hash": "05e6f0cb59f710c0c136c757ce300ffa",
     "packages": [
         {
             "name": "braincrafted/bootstrap-bundle",
@@ -1375,16 +1375,16 @@
         },
         {
             "name": "integrated/block-bundle",
-            "version": "0.4.x-dev",
+            "version": "dev-INTEGRATED-39-add-image-in-editor-when-e",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-block-bundle.git",
-                "reference": "2f6388d72447dfb4290f52b0f8acac13965639f3"
+                "reference": "71a76ac1a9e1c74ff4677170f0478a36f5f94d6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-block-bundle/get/2f6388d72447dfb4290f52b0f8acac13965639f3.zip",
-                "reference": "2f6388d72447dfb4290f52b0f8acac13965639f3",
+                "url": "https://bitbucket.org/eactive/integrated-block-bundle/get/71a76ac1a9e1c74ff4677170f0478a36f5f94d6f.zip",
+                "reference": "71a76ac1a9e1c74ff4677170f0478a36f5f94d6f",
                 "shasum": ""
             },
             "require": {
@@ -1431,7 +1431,7 @@
                 "Integrated",
                 "block"
             ],
-            "time": "2016-01-15 13:17:01"
+            "time": "2016-01-20 23:09:02"
         },
         {
             "name": "integrated/channel-bundle",
@@ -1558,12 +1558,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-formtype-bundle.git",
-                "reference": "0bb148b607d636d46350e14c91078f9c12144e5c"
+                "reference": "c28dda5bc3e2d01159df3544a0bc1e6164baa4e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-formtype-bundle/get/0bb148b607d636d46350e14c91078f9c12144e5c.zip",
-                "reference": "0bb148b607d636d46350e14c91078f9c12144e5c",
+                "url": "https://bitbucket.org/eactive/integrated-formtype-bundle/get/c28dda5bc3e2d01159df3544a0bc1e6164baa4e5.zip",
+                "reference": "c28dda5bc3e2d01159df3544a0bc1e6164baa4e5",
                 "shasum": ""
             },
             "require": {
@@ -1607,7 +1607,7 @@
                 "Integrated",
                 "form"
             ],
-            "time": "2016-01-19 23:18:27"
+            "time": "2016-01-20 23:45:24"
         },
         {
             "name": "integrated/library",
@@ -3967,6 +3967,12 @@
             "alias": "0.4",
             "alias_normalized": "0.4.0.0",
             "version": "dev-INTEGRATED-39-add-image-in-editor-when-e",
+            "package": "integrated/block-bundle"
+        },
+        {
+            "alias": "0.4",
+            "alias_normalized": "0.4.0.0",
+            "version": "dev-INTEGRATED-39-add-image-in-editor-when-e",
             "package": "integrated/formtype-bundle"
         }
     ],
@@ -3975,6 +3981,7 @@
         "symfony/assetic-bundle": 0,
         "symfony/swiftmailer-bundle": 0,
         "symfony/monolog-bundle": 0,
+        "integrated/block-bundle": 20,
         "integrated/formtype-bundle": 20
     },
     "prefer-stable": true,
