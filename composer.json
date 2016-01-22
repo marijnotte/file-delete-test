@@ -21,17 +21,17 @@
         "incenteev/composer-parameter-handler": "~2.0",
         "sp/bower-bundle": "~0.9",
         "components/jquery": "1.10.*",
-        "integrated/library": "~0.4,<0.5",
-        "integrated/block-bundle": "dev-INTEGRATED-39-add-image-in-editor-when-e as 0.4",
-        "integrated/channel-bundle": "~0.4,<0.5",
-        "integrated/content-bundle": "~0.4,<0.5",
-        "integrated/formtype-bundle": "dev-INTEGRATED-39-add-image-in-editor-when-e as 0.4",
-        "integrated/solr-bundle": "~0.4,<0.5",
-        "integrated/storage-bundle": "~0.4,<0.5",
-        "integrated/user-bundle": "~0.4,<0.5",
-        "integrated/website-bundle": "~0.4,<0.5",
-        "integrated/workflow-bundle": "~0.4,<0.5",
-        "integrated/puphpet": "~0.4,<0.5"
+        "integrated/library": "~0.5",
+        "integrated/block-bundle": "~0.5",
+        "integrated/channel-bundle": "~0.5",
+        "integrated/content-bundle": "~0.5",
+        "integrated/formtype-bundle": "~0.5",
+        "integrated/solr-bundle": "~0.5",
+        "integrated/storage-bundle": "~0.4",
+        "integrated/user-bundle": "~0.5",
+        "integrated/website-bundle": "~0.5",
+        "integrated/workflow-bundle": "~0.5",
+        "integrated/puphpet": "~0.4"
     },
     "scripts": {
         "post-install-cmd": [

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c74c125825b312fbef3b29e4a8749075",
-    "content-hash": "05e6f0cb59f710c0c136c757ce300ffa",
+    "hash": "80afccdb8f2378134f1588a3ba6fc480",
+    "content-hash": "5758242623fea9e50941f6852ff7d933",
     "packages": [
         {
             "name": "braincrafted/bootstrap-bundle",
@@ -1375,16 +1375,16 @@
         },
         {
             "name": "integrated/block-bundle",
-            "version": "dev-INTEGRATED-39-add-image-in-editor-when-e",
+            "version": "0.5.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-block-bundle.git",
-                "reference": "71a76ac1a9e1c74ff4677170f0478a36f5f94d6f"
+                "reference": "76410c3f8181a1bd03550e836357eb2f6d523054"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-block-bundle/get/71a76ac1a9e1c74ff4677170f0478a36f5f94d6f.zip",
-                "reference": "71a76ac1a9e1c74ff4677170f0478a36f5f94d6f",
+                "url": "https://bitbucket.org/eactive/integrated-block-bundle/get/76410c3f8181a1bd03550e836357eb2f6d523054.zip",
+                "reference": "76410c3f8181a1bd03550e836357eb2f6d523054",
                 "shasum": ""
             },
             "require": {
@@ -1431,28 +1431,33 @@
                 "Integrated",
                 "block"
             ],
-            "time": "2016-01-20 23:09:02"
+            "time": "2016-01-14 08:57:23"
         },
         {
             "name": "integrated/channel-bundle",
-            "version": "0.4.x-dev",
+            "version": "0.5.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-channel-bundle.git",
-                "reference": "48b337353e7764bf16d0bcd081a16cda3053664b"
+                "reference": "071c990503264eaccc0f9616f8b5bbddd0a51fcb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-channel-bundle/zipball/48b337353e7764bf16d0bcd081a16cda3053664b",
-                "reference": "48b337353e7764bf16d0bcd081a16cda3053664b",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-channel-bundle/zipball/071c990503264eaccc0f9616f8b5bbddd0a51fcb",
+                "reference": "071c990503264eaccc0f9616f8b5bbddd0a51fcb",
                 "shasum": ""
             },
             "require": {
                 "braincrafted/bootstrap-bundle": ">=1.5",
+                "doctrine/doctrine-bundle": "~1.6",
                 "integrated/library": "~0.3",
                 "knplabs/knp-paginator-bundle": "~2.3",
                 "php": ">=5.4",
                 "symfony/symfony": "~2.7"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8",
+                "squizlabs/php_codesniffer": "2.*"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -1476,20 +1481,20 @@
                 "Integrated",
                 "channel"
             ],
-            "time": "2015-12-28 13:40:05"
+            "time": "2015-12-28 20:02:46"
         },
         {
             "name": "integrated/content-bundle",
-            "version": "0.4.x-dev",
+            "version": "0.5.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-content-bundle.git",
-                "reference": "757f1eb2979f95b48b524a3a2c690f41accf83df"
+                "reference": "ef9277ea273328fdbb627ff302338a5ac69cbe05"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/757f1eb2979f95b48b524a3a2c690f41accf83df.zip",
-                "reference": "757f1eb2979f95b48b524a3a2c690f41accf83df",
+                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/ef9277ea273328fdbb627ff302338a5ac69cbe05.zip",
+                "reference": "ef9277ea273328fdbb627ff302338a5ac69cbe05",
                 "shasum": ""
             },
             "require": {
@@ -1512,7 +1517,6 @@
                 "php": ">=5.4",
                 "symfony/framework-bundle": "~2.2",
                 "symfony/symfony": "~2.7",
-                "twbs/bootstrap": "3.*",
                 "vihuvac/recaptcha-bundle": "~2.0"
             },
             "require-dev": {
@@ -1549,25 +1553,24 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2016-01-19 12:27:31"
+            "time": "2016-01-22 12:54:00"
         },
         {
             "name": "integrated/formtype-bundle",
-            "version": "dev-INTEGRATED-39-add-image-in-editor-when-e",
+            "version": "dev-develop",
             "target-dir": "Integrated/Bundle/FormTypeBundle",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-formtype-bundle.git",
-                "reference": "c28dda5bc3e2d01159df3544a0bc1e6164baa4e5"
+                "reference": "d0c608501da478bd10b54d18bc66048a27cdb62e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-formtype-bundle/get/c28dda5bc3e2d01159df3544a0bc1e6164baa4e5.zip",
-                "reference": "c28dda5bc3e2d01159df3544a0bc1e6164baa4e5",
+                "url": "https://bitbucket.org/eactive/integrated-formtype-bundle/get/d0c608501da478bd10b54d18bc66048a27cdb62e.zip",
+                "reference": "d0c608501da478bd10b54d18bc66048a27cdb62e",
                 "shasum": ""
             },
             "require": {
-                "friendsofsymfony/jsrouting-bundle": "~1.5",
                 "php": ">=5.4",
                 "sp/bower-bundle": "~0.9",
                 "symfony/framework-bundle": "~2.2",
@@ -1575,9 +1578,6 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "3.7.*"
-            },
-            "suggest": {
-                "integrated-content-bundle": "Allows use of the integrated_tinymce formtype"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -1607,20 +1607,20 @@
                 "Integrated",
                 "form"
             ],
-            "time": "2016-01-20 23:45:24"
+            "time": "2015-09-21 08:56:57"
         },
         {
             "name": "integrated/library",
-            "version": "0.4.x-dev",
+            "version": "0.5.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-library.git",
-                "reference": "a2a1f548970a23732ad90b0b92154cffb8695cda"
+                "reference": "b9390b3df76c37fb1d80a8bd7edf65715baa25b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-library/get/a2a1f548970a23732ad90b0b92154cffb8695cda.zip",
-                "reference": "a2a1f548970a23732ad90b0b92154cffb8695cda",
+                "url": "https://bitbucket.org/eactive/integrated-library/get/b9390b3df76c37fb1d80a8bd7edf65715baa25b9.zip",
+                "reference": "b9390b3df76c37fb1d80a8bd7edf65715baa25b9",
                 "shasum": ""
             },
             "require": {
@@ -1688,7 +1688,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2016-01-18 14:31:47"
+            "time": "2016-01-18 14:32:24"
         },
         {
             "name": "integrated/locking-bundle",
@@ -1937,17 +1937,17 @@
         },
         {
             "name": "integrated/solr-bundle",
-            "version": "0.4.x-dev",
+            "version": "0.5.x-dev",
             "target-dir": "Integrated/Bundle/SolrBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-solr-bundle.git",
-                "reference": "ccbb220b7a048e05458104be5ee1891852ba8edb"
+                "reference": "e04dcbe24a8db15e5db8ab93ec455d3b8e088c37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-solr-bundle/zipball/ccbb220b7a048e05458104be5ee1891852ba8edb",
-                "reference": "ccbb220b7a048e05458104be5ee1891852ba8edb",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-solr-bundle/zipball/e04dcbe24a8db15e5db8ab93ec455d3b8e088c37",
+                "reference": "e04dcbe24a8db15e5db8ab93ec455d3b8e088c37",
                 "shasum": ""
             },
             "require": {
@@ -1982,7 +1982,7 @@
                 "Integrated",
                 "solr"
             ],
-            "time": "2015-12-29 23:07:52"
+            "time": "2016-01-19 23:30:42"
         },
         {
             "name": "integrated/storage-bundle",
@@ -2081,16 +2081,16 @@
         },
         {
             "name": "integrated/user-bundle",
-            "version": "0.4.x-dev",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-user-bundle.git",
-                "reference": "263de94eb5ddb57ddf66705ca44704de589faded"
+                "reference": "c98eba212ea8c158496670c5076412c92dc31e3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-user-bundle/get/263de94eb5ddb57ddf66705ca44704de589faded.zip",
-                "reference": "263de94eb5ddb57ddf66705ca44704de589faded",
+                "url": "https://bitbucket.org/eactive/integrated-user-bundle/get/c98eba212ea8c158496670c5076412c92dc31e3f.zip",
+                "reference": "c98eba212ea8c158496670c5076412c92dc31e3f",
                 "shasum": ""
             },
             "require": {
@@ -2131,20 +2131,20 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2015-10-21 08:43:58"
+            "time": "2015-08-18 14:22:59"
         },
         {
             "name": "integrated/website-bundle",
-            "version": "0.4.x-dev",
+            "version": "0.5.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-website-bundle.git",
-                "reference": "3755d2245607301a1ba6a85d620140191bd1f6cd"
+                "reference": "8315f7cd013f7860c75c18022fbc8bdafca67a16"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-website-bundle/zipball/3755d2245607301a1ba6a85d620140191bd1f6cd",
-                "reference": "3755d2245607301a1ba6a85d620140191bd1f6cd",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-website-bundle/zipball/8315f7cd013f7860c75c18022fbc8bdafca67a16",
+                "reference": "8315f7cd013f7860c75c18022fbc8bdafca67a16",
                 "shasum": ""
             },
             "require": {
@@ -2165,6 +2165,10 @@
                 "symfony/framework-bundle": ">=2.2",
                 "symfony/symfony": ">=2.4",
                 "twbs/bootstrap": "3.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8",
+                "squizlabs/php_codesniffer": "2.*"
             },
             "suggest": {
                 "integrated/channel-bundle": "Manage channel configuration"
@@ -2191,11 +2195,11 @@
                 "Integrated",
                 "website"
             ],
-            "time": "2015-12-27 20:48:15"
+            "time": "2015-12-29 18:56:52"
         },
         {
             "name": "integrated/workflow-bundle",
-            "version": "0.4.x-dev",
+            "version": "0.5.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-workflow-bundle.git",
@@ -3962,27 +3966,12 @@
         }
     ],
     "packages-dev": [],
-    "aliases": [
-        {
-            "alias": "0.4",
-            "alias_normalized": "0.4.0.0",
-            "version": "dev-INTEGRATED-39-add-image-in-editor-when-e",
-            "package": "integrated/block-bundle"
-        },
-        {
-            "alias": "0.4",
-            "alias_normalized": "0.4.0.0",
-            "version": "dev-INTEGRATED-39-add-image-in-editor-when-e",
-            "package": "integrated/formtype-bundle"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
         "symfony/assetic-bundle": 0,
         "symfony/swiftmailer-bundle": 0,
-        "symfony/monolog-bundle": 0,
-        "integrated/block-bundle": 20,
-        "integrated/formtype-bundle": 20
+        "symfony/monolog-bundle": 0
     },
     "prefer-stable": true,
     "prefer-lowest": false,
