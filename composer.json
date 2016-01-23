@@ -31,7 +31,7 @@
         "integrated/user-bundle": "~0.5",
         "integrated/website-bundle": "~0.5",
         "integrated/workflow-bundle": "~0.5",
-        "integrated/puphpet": "~0.4"
+        "integrated/puphpet": "dev-INTEGRATED-672-Ubuntu"
     },
     "scripts": {
         "post-install-cmd": [
