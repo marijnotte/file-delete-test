@@ -4,39 +4,40 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "80afccdb8f2378134f1588a3ba6fc480",
-    "content-hash": "5758242623fea9e50941f6852ff7d933",
+    "hash": "95009b60a6aa53f61ebf2f1001770b5f",
+    "content-hash": "6e1f889505069fdd6cab7d69dfcdf6d8",
     "packages": [
         {
             "name": "braincrafted/bootstrap-bundle",
-            "version": "v2.1.2",
+            "version": "v2.2.0",
             "target-dir": "Braincrafted/Bundle/BootstrapBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/braincrafted/bootstrap-bundle.git",
-                "reference": "c301bae8ba91b1a6f1045919b16f9cb9b62c7e7b"
+                "reference": "23ae42061668d0fdc999b63db55c264265e037ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/braincrafted/bootstrap-bundle/zipball/c301bae8ba91b1a6f1045919b16f9cb9b62c7e7b",
-                "reference": "c301bae8ba91b1a6f1045919b16f9cb9b62c7e7b",
+                "url": "https://api.github.com/repos/braincrafted/bootstrap-bundle/zipball/23ae42061668d0fdc999b63db55c264265e037ab",
+                "reference": "23ae42061668d0fdc999b63db55c264265e037ab",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
-                "symfony/console": "~2.3",
-                "symfony/finder": "~2.3",
-                "symfony/form": "~2.3",
-                "symfony/framework-bundle": "~2.3",
-                "symfony/twig-bundle": "~2.3"
+                "symfony/console": "~2.6|~3.0",
+                "symfony/finder": "~2.6|~3.0",
+                "symfony/form": "~2.6|~3.0",
+                "symfony/framework-bundle": "~2.6|~3.0",
+                "symfony/twig-bundle": "~2.6|~3.0",
+                "twig/twig": "~1.12|~2.0@dev"
             },
             "require-dev": {
                 "knplabs/knp-menu": "~2.0@alpha",
                 "knplabs/knp-menu-bundle": "~2.0@alpha",
                 "knplabs/knp-paginator-bundle": "dev-master",
-                "mockery/mockery": "0.9.*",
-                "phpunit/phpunit": "3.7.*",
-                "symfony/assetic-bundle": "~2.3"
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~3.7",
+                "symfony/assetic-bundle": "~2.6|~3.0"
             },
             "suggest": {
                 "knplabs/knp-menu": "Required to use KnpMenuBundle.",
@@ -65,7 +66,7 @@
             "keywords": [
                 "bootstrap"
             ],
-            "time": "2015-03-06 12:14:13"
+            "time": "2016-01-23 17:44:32"
         },
         {
             "name": "components/jquery",
@@ -1489,12 +1490,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-content-bundle.git",
-                "reference": "ef9277ea273328fdbb627ff302338a5ac69cbe05"
+                "reference": "9359aaf9124ab9e9399bd4da6b6a7ed1a56e9dee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/ef9277ea273328fdbb627ff302338a5ac69cbe05.zip",
-                "reference": "ef9277ea273328fdbb627ff302338a5ac69cbe05",
+                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/9359aaf9124ab9e9399bd4da6b6a7ed1a56e9dee.zip",
+                "reference": "9359aaf9124ab9e9399bd4da6b6a7ed1a56e9dee",
                 "shasum": ""
             },
             "require": {
@@ -1553,7 +1554,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2016-01-22 12:54:00"
+            "time": "2016-01-24 20:39:54"
         },
         {
             "name": "integrated/formtype-bundle",
@@ -1615,12 +1616,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-library.git",
-                "reference": "b9390b3df76c37fb1d80a8bd7edf65715baa25b9"
+                "reference": "436634b8b627ee7d51f4e0089dabcf92e31a9226"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-library/get/b9390b3df76c37fb1d80a8bd7edf65715baa25b9.zip",
-                "reference": "b9390b3df76c37fb1d80a8bd7edf65715baa25b9",
+                "url": "https://bitbucket.org/eactive/integrated-library/get/436634b8b627ee7d51f4e0089dabcf92e31a9226.zip",
+                "reference": "436634b8b627ee7d51f4e0089dabcf92e31a9226",
                 "shasum": ""
             },
             "require": {
@@ -1688,7 +1689,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2016-01-18 14:32:24"
+            "time": "2016-01-24 20:40:04"
         },
         {
             "name": "integrated/locking-bundle",
@@ -1853,16 +1854,16 @@
         },
         {
             "name": "integrated/puphpet",
-            "version": "0.4.x-dev",
+            "version": "dev-INTEGRATED-672-Ubuntu",
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-puphpet.git",
-                "reference": "e1454d990328495994aa5a5f5a5e6b576384c98c"
+                "reference": "3e36d42d2f91a2444c9b74c0c9ebbdcded00f96c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-puphpet/zipball/e1454d990328495994aa5a5f5a5e6b576384c98c",
-                "reference": "e1454d990328495994aa5a5f5a5e6b576384c98c",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-puphpet/zipball/3e36d42d2f91a2444c9b74c0c9ebbdcded00f96c",
+                "reference": "3e36d42d2f91a2444c9b74c0c9ebbdcded00f96c",
                 "shasum": ""
             },
             "type": "library",
@@ -1883,7 +1884,7 @@
                 "puphpet",
                 "vagrant"
             ],
-            "time": "2015-12-28 13:28:41"
+            "time": "2016-01-24 09:45:07"
         },
         {
             "name": "integrated/slug-bundle",
@@ -2203,12 +2204,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-workflow-bundle.git",
-                "reference": "7768b2b90118d7c4e2c28978b407a151a32d929c"
+                "reference": "5e810c6a9913aa7c2855a43e514a9a6af258fbb8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-workflow-bundle/get/7768b2b90118d7c4e2c28978b407a151a32d929c.zip",
-                "reference": "7768b2b90118d7c4e2c28978b407a151a32d929c",
+                "url": "https://bitbucket.org/eactive/integrated-workflow-bundle/get/5e810c6a9913aa7c2855a43e514a9a6af258fbb8.zip",
+                "reference": "5e810c6a9913aa7c2855a43e514a9a6af258fbb8",
                 "shasum": ""
             },
             "require": {
@@ -2252,7 +2253,7 @@
                 "Integrated",
                 "workflow"
             ],
-            "time": "2016-01-17 22:42:30"
+            "time": "2016-01-24 21:25:09"
         },
         {
             "name": "jdorn/sql-formatter",
@@ -2828,6 +2829,59 @@
                 "minification"
             ],
             "time": "2015-11-12 13:51:40"
+        },
+        {
+            "name": "leafo/scssphp",
+            "version": "v0.6.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/leafo/scssphp.git",
+                "reference": "a27edad3d16635a222d7204706572e24c338aa17"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/leafo/scssphp/zipball/a27edad3d16635a222d7204706572e24c338aa17",
+                "reference": "a27edad3d16635a222d7204706572e24c338aa17",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "kherge/box": "~2.5",
+                "phpunit/phpunit": "~3.7",
+                "squizlabs/php_codesniffer": "~2.5"
+            },
+            "bin": [
+                "bin/pscss"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Leafo\\ScssPhp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leaf Corcoran",
+                    "email": "leafot@gmail.com",
+                    "homepage": "http://leafo.net"
+                }
+            ],
+            "description": "scssphp is a compiler for SCSS written in PHP.",
+            "homepage": "http://leafo.github.io/scssphp/",
+            "keywords": [
+                "css",
+                "less",
+                "sass",
+                "scss",
+                "stylesheet"
+            ],
+            "time": "2016-01-15 02:50:06"
         },
         {
             "name": "monolog/monolog",
@@ -3971,7 +4025,8 @@
     "stability-flags": {
         "symfony/assetic-bundle": 0,
         "symfony/swiftmailer-bundle": 0,
-        "symfony/monolog-bundle": 0
+        "symfony/monolog-bundle": 0,
+        "integrated/puphpet": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

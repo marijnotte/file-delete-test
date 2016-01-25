@@ -31,7 +31,8 @@
         "integrated/user-bundle": "~0.5",
         "integrated/website-bundle": "~0.5",
         "integrated/workflow-bundle": "~0.5",
-        "integrated/puphpet": "dev-INTEGRATED-672-Ubuntu"
+        "integrated/puphpet": "dev-INTEGRATED-672-Ubuntu",
+        "leafo/scssphp": "^0.6.3"
     },
     "scripts": {
         "post-install-cmd": [

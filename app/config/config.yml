@@ -44,21 +44,19 @@ assetic:
     use_controller: true
     filters:
         less:
-            node_paths: [/usr/local/lib/node_modules]
+            node_paths: [/usr/local/lib/node_modules, /usr/lib/node_modules]
             compress: true
             apply_to: "\.less$"
         cssrewrite: ~
-        sass:
-            bin: /usr/local/rvm/gems/ruby-1.9.3-p551/bin/sass
-            apply_to: "\.scss$"
-            style: compressed
+        scssphp:
+            formatter: 'Leafo\ScssPhp\Formatter\Compressed'
 
     assets:
         integrated_css:
             inputs:
                 - @IntegratedContentBundle/Resources/public/sass/main.scss
             filters:
-                - sass
+                - scssphp
             output: css/main.css
         integrated_js:
             inputs:
