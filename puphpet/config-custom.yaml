@@ -1,3 +1,4 @@
 vagrantfile:
     vm:
         hostname: integrated-release-test
+        memory: '3072'
