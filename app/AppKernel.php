@@ -16,31 +16,6 @@ class AppKernel extends Kernel
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
-            new Doctrine\Bundle\MongoDBBundle\DoctrineMongoDBBundle(),
-            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
-            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
-            new Sp\BowerBundle\SpBowerBundle(),
-            new Braincrafted\Bundle\BootstrapBundle\BraincraftedBootstrapBundle(),
-            new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
-            new Knp\Bundle\GaufretteBundle\KnpGaufretteBundle(),
-            new Vihuvac\Bundle\RecaptchaBundle\VihuvacRecaptchaBundle(),
-
-            new Integrated\Bundle\ContentBundle\IntegratedContentBundle(),
-            new Integrated\Bundle\FormTypeBundle\IntegratedFormTypeBundle(),
-            new Integrated\Bundle\SolrBundle\IntegratedSolrBundle(),
-            new Integrated\Bundle\StorageBundle\IntegratedStorageBundle(),
-            new Integrated\Bundle\UserBundle\IntegratedUserBundle(),
-            new Integrated\Bundle\LockingBundle\IntegratedLockingBundle(),
-            new Integrated\Bundle\SlugBundle\IntegratedSlugBundle(),
-            new Integrated\Bundle\ThemeBundle\IntegratedThemeBundle(),
-            new Integrated\Bundle\PageBundle\IntegratedPageBundle(),
-            new Integrated\Bundle\BlockBundle\IntegratedBlockBundle(),
-            new Integrated\Bundle\ChannelBundle\IntegratedChannelBundle(),
-            new Integrated\Bundle\WebsiteBundle\IntegratedWebsiteBundle(),
-            new Integrated\Bundle\MenuBundle\IntegratedMenuBundle(),
-            new Integrated\Bundle\WorkflowBundle\IntegratedWorkflowBundle(),
-
-            new AppBundle\AppBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

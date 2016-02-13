@@ -38,37 +38,6 @@ services:
         tags:
             - { name: twig.extension }
 
-# Assetic Configuration
-assetic:
-    debug:          %kernel.debug%
-    use_controller: true
-    filters:
-        less:
-            node_paths: [/usr/local/lib/node_modules, /usr/lib/node_modules]
-            compress: true
-            apply_to: "\.less$"
-        cssrewrite: ~
-        scssphp:
-            formatter: 'Leafo\ScssPhp\Formatter\Compressed'
-
-    assets:
-        integrated_css:
-            inputs:
-                - @IntegratedContentBundle/Resources/public/sass/main.scss
-            filters:
-                - scssphp
-            output: css/main.css
-        integrated_js:
-            inputs:
-                - @IntegratedFormTypeBundle/Resources/public/components/smalot-bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js
-                - @IntegratedFormTypeBundle/Resources/public/components/select2/select2.js
-                - @IntegratedFormTypeBundle/Resources/public/js/datetimepicker.js
-
-# Bootstrap Configuration
-braincrafted_bootstrap:
-    auto_configure:
-        assetic: false
-
 # Doctrine Configuration
 doctrine:
     dbal:
@@ -87,16 +56,6 @@ doctrine:
         auto_generate_proxy_classes: %kernel.debug%
         auto_mapping: true
 
-doctrine_mongodb:
-    connections:
-        default:
-            server: %mongodb_server%
-            options: %mongodb_options%
-    default_database: %mongodb_database%
-    document_managers:
-        default:
-            auto_mapping: true
-
 # Swiftmailer Configuration
 swiftmailer:
     transport: %mailer_transport%
@@ -104,58 +63,3 @@ swiftmailer:
     username:  %mailer_user%
     password:  %mailer_password%
     spool:     { type: memory }
-
-# Storage Configuration
-knp_gaufrette:
-    adapters:
-        local:
-            local:
-                directory: %kernel.root_dir%/../web/files
-    filesystems:
-        integrated:
-            adapter: local
-
-integrated_storage:
-    resolver:
-        integrated:
-            public: /files
-
-# Solr Configuration
-integrated_solr:
-    endpoints:
-        default:
-            host: %solr_host%
-            port: %solr_port%
-            core: %solr_core%
-            timeout: %solr_timeout%
-
-# Bower Configuration
-sp_bower:
-    bundles:
-        IntegratedContentBundle:
-            cache:
-                %kernel.cache_dir%/../sp_bower/IntegratedContentBundle
-        IntegratedFormTypeBundle:
-            cache:
-                %kernel.cache_dir%/../sp_bower/IntegratedFormTypeBundle
-        IntegratedWebsiteBundle:
-            cache:
-                %kernel.cache_dir%/../sp_bower/IntegratedWebsiteBundle
-    bin: %bower_bin%
-    install_on_warmup: true
-    assetic:
-        enabled: false
-
-# Theme Configuration
-integrated_theme:
-    themes:
-        default:
-            paths:
-                - @IntegratedWebsiteBundle/Resources/views/themes/default
-
-vihuvac_recaptcha:
-    site_key:   %recaptcha_site_key%
-    secret_key: %recaptcha_secret_key%
-    secure:     true
-    enabled:    true
-    locale_key: kernel.default_locale

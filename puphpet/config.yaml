@@ -1,0 +1,585 @@
+vagrantfile:
+    target: local
+    vm:
+        box: puphpet/ubuntu1404-x32
+        box_url: puphpet/ubuntu1404-x32
+        hostname: localhost
+        memory: '2048'
+        cpus: '2'
+        chosen_provider: virtualbox
+        box_version: ''
+        network:
+            private_network: 192.168.56.101
+            forwarded_port:
+                vflnp_9ncj24fhtof6:
+                    host: '8080'
+                    guest: '8080'
+                vflnp_5avkbmsd37l0:
+                    host: '4443'
+                    guest: '4443'
+                vflnp_ws4unf09jcvb:
+                    host: '15672'
+                    guest: '15672'
+                vflnp_331dwfi6vdqo:
+                    host: '1080'
+                    guest: '1080'
+        post_up_message: ''
+        provider:
+            virtualbox:
+                modifyvm:
+                    natdnshostresolver1: false
+                showgui: '0'
+            vmware:
+                numvcpus: 1
+            parallels:
+                use_linked_clone: '0'
+                check_guest_tools: '0'
+                update_guest_tools: '0'
+        provision:
+            puppet:
+                manifests_path: puphpet/puppet/manifests
+                module_path: puphpet/puppet/modules
+                options:
+                    - '--verbose'
+                    - '--hiera_config /vagrant/puphpet/puppet/hiera.yaml'
+        synced_folder: {  }
+        usable_port_range:
+            start: 10200
+            stop: 10500
+    ssh:
+        host: null
+        port: null
+        private_key_path: null
+        username: vagrant
+        guest_port: null
+        keep_alive: true
+        forward_agent: false
+        forward_x11: false
+        shell: 'bash -l'
+        insert_key: false
+    vagrant:
+        host: detect
+    proxy:
+        http: ''
+        https: ''
+        ftp: ''
+        no_proxy: ''
+        enabled: ''
+server:
+    install: '1'
+    packages:
+        - git
+users_groups:
+    install: '1'
+    groups: {  }
+    users: {  }
+locale:
+    install: '1'
+    settings:
+        default_locale: en_US.UTF-8
+        locales:
+            - aa_DJ.UTF-8
+            - af_ZA.UTF-8
+            - an_ES.UTF-8
+            - ar_AE.UTF-8
+            - ar_BH.UTF-8
+            - ar_DZ.UTF-8
+            - ar_EG.UTF-8
+            - ar_IQ.UTF-8
+            - ar_JO.UTF-8
+            - ar_KW.UTF-8
+            - ar_LB.UTF-8
+            - ar_LY.UTF-8
+            - ar_MA.UTF-8
+            - ar_OM.UTF-8
+            - ar_QA.UTF-8
+            - ar_SA.UTF-8
+            - ar_SD.UTF-8
+            - ar_SY.UTF-8
+            - ar_TN.UTF-8
+            - ar_YE.UTF-8
+            - ast_ES.UTF-8
+            - be_BY.UTF-8
+            - bg_BG.UTF-8
+            - br_FR.UTF-8
+            - bs_BA.UTF-8
+            - ca_AD.UTF-8
+            - ca_ES.UTF-8
+            - ca_ES.UTF-8@valencia
+            - ca_FR.UTF-8
+            - ca_IT.UTF-8
+            - cs_CZ.UTF-8
+            - cy_GB.UTF-8
+            - da_DK.UTF-8
+            - de_AT.UTF-8
+            - de_BE.UTF-8
+            - de_CH.UTF-8
+            - de_DE.UTF-8
+            - de_LI.UTF-8
+            - de_LU.UTF-8
+            - el_GR.UTF-8
+            - el_CY.UTF-8
+            - en_AU.UTF-8
+            - en_BW.UTF-8
+            - en_CA.UTF-8
+            - en_DK.UTF-8
+            - en_GB.UTF-8
+            - en_HK.UTF-8
+            - en_IE.UTF-8
+            - en_NZ.UTF-8
+            - en_PH.UTF-8
+            - en_SG.UTF-8
+            - en_US.UTF-8
+            - en_ZA.UTF-8
+            - en_ZW.UTF-8
+            - eo.UTF-8
+            - eo_US.UTF-8
+            - es_AR.UTF-8
+            - es_BO.UTF-8
+            - es_CL.UTF-8
+            - es_CO.UTF-8
+            - es_CR.UTF-8
+            - es_DO.UTF-8
+            - es_EC.UTF-8
+            - es_ES.UTF-8
+            - es_GT.UTF-8
+            - es_HN.UTF-8
+            - es_MX.UTF-8
+            - es_NI.UTF-8
+            - es_PA.UTF-8
+            - es_PE.UTF-8
+            - es_PR.UTF-8
+            - es_PY.UTF-8
+            - es_SV.UTF-8
+            - es_US.UTF-8
+            - es_UY.UTF-8
+            - es_VE.UTF-8
+            - et_EE.UTF-8
+            - eu_ES.UTF-8
+            - eu_FR.UTF-8
+            - fi_FI.UTF-8
+            - fo_FO.UTF-8
+            - fr_BE.UTF-8
+            - fr_CA.UTF-8
+            - fr_CH.UTF-8
+            - fr_FR.UTF-8
+            - fr_LU.UTF-8
+            - ga_IE.UTF-8
+            - gd_GB.UTF-8
+            - gl_ES.UTF-8
+            - gv_GB.UTF-8
+            - he_IL.UTF-8
+            - hr_HR.UTF-8
+            - hsb_DE.UTF-8
+            - hu_HU.UTF-8
+            - id_ID.UTF-8
+            - is_IS.UTF-8
+            - it_CH.UTF-8
+            - it_IT.UTF-8
+            - iw_IL.UTF-8
+            - ja_JP.UTF-8
+            - ka_GE.UTF-8
+            - kk_KZ.UTF-8
+            - kl_GL.UTF-8
+            - ko_KR.UTF-8
+            - ku_TR.UTF-8
+            - kw_GB.UTF-8
+            - lg_UG.UTF-8
+            - lt_LT.UTF-8
+            - lv_LV.UTF-8
+            - mg_MG.UTF-8
+            - mi_NZ.UTF-8
+            - mk_MK.UTF-8
+            - ms_MY.UTF-8
+            - mt_MT.UTF-8
+            - nb_NO.UTF-8
+            - nl_BE.UTF-8
+            - nl_NL.UTF-8
+            - nn_NO.UTF-8
+            - oc_FR.UTF-8
+            - om_KE.UTF-8
+            - pl_PL.UTF-8
+            - pt_BR.UTF-8
+            - pt_PT.UTF-8
+            - ro_RO.UTF-8
+            - ru_RU.UTF-8
+            - ru_UA.UTF-8
+            - sk_SK.UTF-8
+            - sl_SI.UTF-8
+            - so_DJ.UTF-8
+            - so_KE.UTF-8
+            - so_SO.UTF-8
+            - sq_AL.UTF-8
+            - st_ZA.UTF-8
+            - sv_FI.UTF-8
+            - sv_SE.UTF-8
+            - tg_TJ.UTF-8
+            - th_TH.UTF-8
+            - tl_PH.UTF-8
+            - tr_CY.UTF-8
+            - tr_TR.UTF-8
+            - uk_UA.UTF-8
+            - uz_UZ.UTF-8
+            - wa_BE.UTF-8
+            - xh_ZA.UTF-8
+            - yi_US.UTF-8
+            - zh_CN.UTF-8
+            - zh_HK.UTF-8
+            - zh_SG.UTF-8
+            - zh_TW.UTF-8
+            - zu_ZA.UTF-8
+        timezone: UTC
+firewall:
+    install: '1'
+    rules: {  }
+cron:
+    install: '1'
+    jobs: {  }
+nginx:
+    install: '0'
+    settings:
+        default_vhost: 1
+        proxy_buffer_size: 128k
+        proxy_buffers: '4 256k'
+        proxy_connect_timeout: 600s
+        proxy_send_timeout: 600s
+        proxy_read_timeout: 600s
+        names_hash_bucket_size: 128
+    upstreams: {  }
+    vhosts:
+        nxv_u72wf0io8cg9:
+            server_name: awesome.dev
+            server_aliases:
+                - www.awesome.dev
+            www_root: /var/www/awesome
+            listen_port: '80'
+            index_files:
+                - index.html
+                - index.htm
+                - index.php
+            client_max_body_size: 1m
+            ssl: '0'
+            ssl_cert: ''
+            ssl_key: ''
+            ssl_port: '443'
+            ssl_protocols: ''
+            ssl_ciphers: ''
+            rewrite_to_https: '1'
+            spdy: '1'
+            locations:
+                nxvl_56717eilwqat:
+                    location: /
+                    autoindex: 'off'
+                    internal: 'false'
+                    try_files:
+                        - $uri
+                        - $uri/
+                        - /index.php$is_args$args
+                    fastcgi: ''
+                    fastcgi_index: ''
+                    fastcgi_split_path: ''
+                    proxy: ''
+                    proxy_redirect: ''
+                nxvl_ngdljgf1u92y:
+                    location: '~ \.php$'
+                    autoindex: 'off'
+                    internal: 'false'
+                    try_files:
+                        - $uri
+                        - $uri/
+                        - /index.php$is_args$args
+                    fastcgi: '127.0.0.1:9000'
+                    fastcgi_index: index.php
+                    fastcgi_split_path: '^(.+\.php)(/.*)$'
+                    fast_cgi_params_extra:
+                        - 'SCRIPT_FILENAME $request_filename'
+                        - 'APP_ENV dev'
+                    proxy: ''
+                    proxy_redirect: ''
+    proxies: {  }
+apache:
+    install: '1'
+    settings:
+        version: 2.4
+        user: www-data
+        group: www-data
+        default_vhost: true
+        manage_user: false
+        manage_group: false
+        sendfile: 0
+    modules:
+        - proxy_fcgi
+        - rewrite
+    vhosts:
+        av_yy4zprcnxe5q:
+            servername: localhost
+            docroot: /vagrant/web
+            port: '8080'
+            custom_fragment: ''
+            ssl: '0'
+            ssl_cert: ''
+            ssl_key: ''
+            ssl_chain: ''
+            ssl_certs_dir: ''
+            ssl_protocol: ''
+            ssl_cipher: ''
+            directories:
+                avd_dfqcgem0xwpq:
+                    path: /vagrant/web
+                    options:
+                        - Indexes
+                        - FollowSymlinks
+                        - MultiViews
+                    allow_override:
+                        - All
+                    require:
+                        - 'all granted'
+                    custom_fragment: ''
+                    files_match:
+                        avdfm_62ipumbyygbn:
+                            path: \.php$
+                            sethandler: 'proxy:fcgi://127.0.0.1:9000'
+                            custom_fragment: ''
+                            provider: filesmatch
+                    provider: directory
+        av_8fi2tumqg4u4:
+            servername: localhost
+            docroot: /vagrant/web
+            port: '4443'
+            custom_fragment: ''
+            ssl: '1'
+            ssl_cert: ''
+            ssl_key: ''
+            ssl_chain: ''
+            ssl_certs_dir: ''
+            ssl_protocol: ''
+            ssl_cipher: ''
+            directories:
+                avd_ov25f3t9bgee:
+                    path: /vagrant/web
+                    options:
+                        - Indexes
+                        - FollowSymlinks
+                        - MultiViews
+                    allow_override:
+                        - All
+                    require:
+                        - 'all granted'
+                    custom_fragment: ''
+                    files_match:
+                        avdfm_9rlgz58jvey5:
+                            path: \.php$
+                            sethandler: 'proxy:fcgi://127.0.0.1:9000'
+                            custom_fragment: ''
+                            provider: filesmatch
+                    provider: directory
+php:
+    install: '1'
+    settings:
+        version: '56'
+    modules:
+        php:
+            - cli
+            - intl
+            - mcrypt
+            - curl
+            - gd
+        pear: {  }
+        pecl:
+            - APCu
+    ini:
+        display_errors: 'On'
+        error_reporting: '-1'
+        session.save_path: /var/lib/php/session
+        date.timezone: UTC
+        max_execution_time: '3600'
+    fpm_ini:
+        error_log: /var/log/php-fpm.log
+    fpm_pools:
+        phpfp_3gxkxv7hgcu8:
+            ini:
+                listen: '127.0.0.1:9000'
+                security.limit_extensions: .php
+                prefix: www
+                user: vagrant
+                group: vagrant
+                pm: static
+                pm.max_children: '4'
+    composer: '1'
+    composer_home: ''
+xdebug:
+    install: '1'
+    settings:
+        xdebug.default_enable: '1'
+        xdebug.max_nesting_level: '250'
+        xdebug.var_display_max_depth: '8'
+        xdebug.remote_autostart: '0'
+        xdebug.remote_connect_back: '0'
+        xdebug.remote_host: 10.0.2.2
+        xdebug.remote_enable: '1'
+        xdebug.remote_handler: dbgp
+        xdebug.remote_port: '9000'
+blackfire:
+    install: '0'
+    settings:
+        server_id: ''
+        server_token: ''
+        agent:
+            http_proxy: ''
+            https_proxy: ''
+            log_file: stderr
+            log_level: '1'
+        php:
+            agent_timeout: '0.25'
+            log_file: ''
+            log_level: '1'
+xhprof:
+    install: '0'
+wpcli:
+    install: '0'
+    version: v0.19.0
+drush:
+    install: '0'
+    version: 6.3.0
+ruby:
+    install: '1'
+    versions:
+        rv_8ouon5vz7m0s:
+            default: '1'
+            version: 2.1.2
+            gems:
+                - sass
+python:
+    install: '1'
+    packages: {  }
+    versions: {  }
+nodejs:
+    install: '1'
+    settings:
+        version: '5'
+    npm_packages:
+        - less@1.7.5
+        - bower
+hhvm:
+    install: '0'
+    nightly: 0
+    composer: '1'
+    composer_home: ''
+    settings: {  }
+    server_ini:
+        hhvm.server.host: 127.0.0.1
+        hhvm.server.port: '9000'
+        hhvm.log.use_log_file: '1'
+        hhvm.log.file: /var/log/hhvm/error.log
+    php_ini:
+        display_errors: 'On'
+        error_reporting: '-1'
+        date.timezone: UTC
+mariadb:
+    install: '0'
+    settings:
+        version: '10.0'
+        root_password: '123'
+        override_options: {  }
+    adminer: 0
+    users:
+        mariadbnu_gyps0xohamjf:
+            name: dbuser
+            password: '123'
+    databases:
+        mariadbnd_47y1tp2ogc9u:
+            name: dbname
+            sql: ''
+    grants:
+        mariadbng_y26vi5gdw3pv:
+            user: dbuser
+            table: '*.*'
+            privileges:
+                - ALL
+mysql:
+    install: '1'
+    settings:
+        version: '5.5'
+        root_password: root
+        override_options: {  }
+    adminer: '1'
+    users:
+        mysqlnu_bhctp2t6rafp:
+            name: integrated
+            password: integrated
+    databases:
+        mysqlnd_013hunjh1b3s:
+            name: integrated
+            sql: ''
+    grants:
+        mysqlng_reapthz58bu6:
+            user: integrated
+            table: 'integrated.*'
+            privileges:
+                - ALL
+postgresql:
+    install: '0'
+    settings:
+        global:
+            encoding: UTF8
+            version: '9.3'
+        server:
+            postgres_password: '123'
+    databases: {  }
+    users: {  }
+    grants: {  }
+    adminer: 0
+mongodb:
+    install: '0'
+    settings:
+        bind_ip: 127.0.0.1
+        port: '27017'
+    globals:
+        version: 2.6.0
+    databases: {  }
+redis:
+    install: '0'
+    settings:
+        port: '6379'
+sqlite:
+    install: '0'
+    adminer: 0
+    databases: {  }
+mailhog:
+    install: '1'
+    settings:
+        smtp_ip: 0.0.0.0
+        smtp_port: 1025
+        http_ip: 0.0.0.0
+        http_port: '8025'
+        path: /usr/local/bin/mailhog
+beanstalkd:
+    install: '0'
+    settings:
+        listenaddress: 0.0.0.0
+        listenport: '13000'
+        maxjobsize: '65535'
+        maxconnections: '1024'
+        binlogdir: /var/lib/beanstalkd/binlog
+        binlogfsync: null
+        binlogsize: '10485760'
+    beanstalk_console: 0
+rabbitmq:
+    install: '0'
+    settings:
+        port: '5672'
+    users: {  }
+    vhosts: {  }
+    plugins: {  }
+elastic_search:
+    install: '0'
+    settings:
+        version: 1.4.1
+        java_install: true
+    instances: {  }
+solr:
+    install: '0'
+    settings:
+        version: 4.10.2
+        port: '8983'
+

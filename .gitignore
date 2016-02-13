@@ -3,7 +3,6 @@
 /web/files/
 /app/bootstrap.php.cache
 /app/cache/*
-/app/config/parameters.yml
 /app/logs/*
 !app/cache/.gitkeep
 !app/logs/.gitkeep
@@ -11,7 +10,6 @@
 /vendor/
 /bin/
 /components/
-/composer.phar
 /web/css/
 /web/js/
 /web/fonts/

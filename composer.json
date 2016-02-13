@@ -1,17 +1,11 @@
 {
-    "name": "integrated/integrated",
+    "name": "test/test",
     "license": "MIT",
     "type": "project",
-    "description": "Skeleton for a new Integrated based application, which includes the use of all core bundles",
+    "description": "",
     "autoload": {
         "psr-0": { "": "src/" }
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://bitbucket.org/vpascal/integrated-content-bundle"
-        }
-    ],
     "require": {
         "php": ">=5.3.3",
         "symfony/symfony": "2.8.*",
@@ -25,20 +19,7 @@
         "sensio/framework-extra-bundle": "~2.3",
         "sensio/generator-bundle": "~2.3",
         "incenteev/composer-parameter-handler": "~2.0",
-        "sp/bower-bundle": "~0.9",
-        "components/jquery": "1.10.*",
-        "integrated/library": "~0.5",
-        "integrated/block-bundle": "~0.5",
-        "integrated/channel-bundle": "~0.5",
-        "integrated/content-bundle": "dev-INTEGRATED-370 as 0.5",
-        "integrated/formtype-bundle": "~0.5",
-        "integrated/solr-bundle": "~0.5",
-        "integrated/storage-bundle": "~0.4",
-        "integrated/user-bundle": "~0.5",
-        "integrated/website-bundle": "~0.5",
-        "integrated/workflow-bundle": "~0.5",
-        "integrated/puphpet": "dev-INTEGRATED-672-Ubuntu",
-        "leafo/scssphp": "^0.6.3"
+        "integrated/puphpet": "dev-INTEGRATED-672-Ubuntu"
     },
     "scripts": {
         "post-install-cmd": [
@@ -49,12 +30,7 @@
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
             "php app/console cache:clear --env=prod",
-            "php app/console fos:js-routing:dump --env=prod",
-            "php app/console assetic:dump web --env=prod",
-            "php app/console doctrine:mongodb:schema:create --env=prod",
-            "php app/console doctrine:schema:create --env=prod",
-            "php app/console init:queue --force --env=prod",
-            "php app/console init:locking --force --env=prod"
+            "php app/console assetic:dump web --env=prod"
         ],
         "post-update-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
@@ -65,12 +41,7 @@
             "Braincrafted\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::install",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
             "php app/console cache:clear --env=prod",
-            "php app/console fos:js-routing:dump --env=prod",
-            "php app/console assetic:dump web --env=prod",
-            "php app/console doctrine:mongodb:schema:create --env=prod",
-            "php app/console doctrine:schema:update --force --env=prod",
-            "php app/console init:queue --force --env=prod",
-            "php app/console init:locking --force --env=prod"
+            "php app/console assetic:dump web --env=prod"
         ]
     },
     "config": {
