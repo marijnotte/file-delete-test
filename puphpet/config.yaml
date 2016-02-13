@@ -3,7 +3,7 @@ vagrantfile:
     vm:
         box: puphpet/ubuntu1404-x32
         box_url: puphpet/ubuntu1404-x32
-        hostname: localhost
+        hostname: file-delete-test
         memory: '2048'
         cpus: '2'
         chosen_provider: virtualbox
