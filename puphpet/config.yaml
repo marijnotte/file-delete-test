@@ -1,8 +1,8 @@
 vagrantfile:
     target: local
     vm:
-        box: puphpet/ubuntu1404-x32
-        box_url: puphpet/ubuntu1404-x32
+        box: puphpet/ubuntu1404-x64
+        box_url: puphpet/ubuntu1404-x64
         hostname: file-delete-test
         memory: '2048'
         cpus: '2'
@@ -385,8 +385,7 @@ php:
             - curl
             - gd
         pear: {  }
-        pecl:
-            - APCu
+        pecl: {  }
     ini:
         display_errors: 'On'
         error_reporting: '-1'
@@ -442,7 +441,7 @@ drush:
     install: '0'
     version: 6.3.0
 ruby:
-    install: '1'
+    install: '0'
     versions:
         rv_8ouon5vz7m0s:
             default: '1'
@@ -454,12 +453,10 @@ python:
     packages: {  }
     versions: {  }
 nodejs:
-    install: '1'
+    install: '0'
     settings:
         version: '5'
-    npm_packages:
-        - less@1.7.5
-        - bower
+    npm_packages: {  }
 hhvm:
     install: '0'
     nightly: 0

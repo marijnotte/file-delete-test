@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "623d9feccc73b5a638028f264dc5c33b",
-    "content-hash": "0a1c068a0b94bb43b08b41ae3dcb4ac0",
+    "hash": "be0cc9a1b3346fb6bc8759d0dacfbea7",
+    "content-hash": "497b20838d2334088e0de4e5561da64f",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -823,40 +823,6 @@
                 "parameters management"
             ],
             "time": "2015-11-10 17:04:01"
-        },
-        {
-            "name": "integrated/puphpet",
-            "version": "dev-INTEGRATED-672-Ubuntu",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/integratedfordevelopers/integrated-puphpet.git",
-                "reference": "722a20e292b01257029136de2e7673f70294c72d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-puphpet/zipball/722a20e292b01257029136de2e7673f70294c72d",
-                "reference": "722a20e292b01257029136de2e7673f70294c72d",
-                "shasum": ""
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "e-Active",
-                    "homepage": "http://www.e-active.nl"
-                }
-            ],
-            "description": "Provides a Vagrant box for Integrated applications, based on PuPHPet",
-            "homepage": "http://www.integratedfordevelopers.com",
-            "keywords": [
-                "Integrated",
-                "puphpet",
-                "vagrant"
-            ],
-            "time": "2016-02-11 18:55:22"
         },
         {
             "name": "ircmaxell/password-compat",
@@ -2276,8 +2242,7 @@
     "stability-flags": {
         "symfony/assetic-bundle": 0,
         "symfony/swiftmailer-bundle": 0,
-        "symfony/monolog-bundle": 0,
-        "integrated/puphpet": 20
+        "symfony/monolog-bundle": 0
     },
     "prefer-stable": true,
     "prefer-lowest": false,

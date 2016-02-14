@@ -6,3 +6,4 @@
 *.gz binary
 *.bz2 binary
 *.ez binary
+*.phar binary

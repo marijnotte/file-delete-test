@@ -18,7 +18,6 @@ parameters:
     mongodb_database: integrated
     mongodb_options:
         db: integrated
-    solr_timeout: 30
     bower_bin: /usr/bin/bower
     recaptcha_site_key: null
     recaptcha_secret_key: null
